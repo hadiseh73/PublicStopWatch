@@ -9,7 +9,7 @@
 import Foundation
 import CoreLocation
 
-class Location {
+public class Location {
     var lon : CLLocationDegrees
     var lat : CLLocationDegrees
     
