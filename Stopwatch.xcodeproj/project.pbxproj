@@ -41,9 +41,9 @@
 		197BEE2C1C798B47005AD5E2 /* StopWatchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopWatchModel.swift; sourceTree = "<group>"; };
 		5548C65929ED2244004CB079 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		5548C65B29ED2267004CB079 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
-		55BF104A29EE9A8A0054D5F6 /* Stopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Stopwatch.app; path = "/Users/hadisehsafaei/Desktop/PublicStopWatch/PublicStopWatch/build/Debug-iphoneos/Stopwatch.app"; sourceTree = "<absolute>"; };
-		55BF104B29EE9A8A0054D5F6 /* StopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = StopwatchTests.xctest; path = "/Users/hadisehsafaei/Desktop/PublicStopWatch/PublicStopWatch/build/Debug-iphoneos/StopwatchTests.xctest"; sourceTree = "<absolute>"; };
 		55BF104C29EE9ACD0054D5F6 /* StopMa */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = StopMa; path = ../../StopMa; sourceTree = "<group>"; };
+		55ED8B0829EFF5E200C179DC /* StopMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55ED8B0929EFF5E200C179DC /* StopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StopwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +81,8 @@
 				197BEE171C76E410005AD5E2 /* Stopwatch */,
 				1931198B20D35E380079AC04 /* StopwatchTests */,
 				559B15D629EE901B0098EEED /* Frameworks */,
+				55ED8B0829EFF5E200C179DC /* StopMaster.app */,
+				55ED8B0929EFF5E200C179DC /* StopwatchTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,7 +127,7 @@
 			);
 			name = StopwatchTests;
 			productName = StopwatchTests;
-			productReference = 55BF104B29EE9A8A0054D5F6 /* StopwatchTests.xctest */;
+			productReference = 55ED8B0929EFF5E200C179DC /* StopwatchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		197BEE141C76E410005AD5E2 /* Stopwatch */ = {
@@ -145,7 +147,7 @@
 				55BF104D29EE9B840054D5F6 /* StopMa */,
 			);
 			productName = Stopwatch;
-			productReference = 55BF104A29EE9A8A0054D5F6 /* Stopwatch.app */;
+			productReference = 55ED8B0829EFF5E200C179DC /* StopMaster.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -167,7 +169,6 @@
 					};
 					197BEE141C76E410005AD5E2 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = L58QM5399L;
 						LastSwiftMigration = 1020;
 					};
 				};
@@ -372,9 +373,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = StopMaster;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -422,8 +424,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = StopMaster;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -436,15 +439,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = L58QM5399L;
 				INFOPLIST_FILE = Stopwatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Bankino;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yigu.Stopwatch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 5.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bankino3.prod;
+				PRODUCT_NAME = StopMaster;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,15 +464,24 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = L58QM5399L;
 				INFOPLIST_FILE = Stopwatch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Bankino;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.yigu.Stopwatch;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 5.7;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bankino3.prod;
+				PRODUCT_NAME = StopMaster;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
